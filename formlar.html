@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <link rel="icon" href="Images/izmirfavicon.ico" type="image/x-icon">
+        <title>Form Uygulaması</title>
+    </head>
+    <body>
+        <h1>Üye Kayıt Formu</h1>
+        <form name="kayit" action="kayit.php" method="GET">
+            Ad :
+            <input type="text" name="ad" id="adid" size="20" maxlength="30" required><br>
+            Soyad :
+            <input type="text" name="soyad" id="soyadid" size="20" maxlength="30" required><br>
+            E Mail :
+            <input type="email" name="email" id="mailid" size="20" maxlength="30" required><br>
+            Web Sitesi :
+            <input type="url" name="website" id="webid" size="20" maxlength="30"><br>
+            Uğurlu Sayınız :
+            <input type="number" name="luckynumber" id="luckyid"><br>
+            Şifre :
+            <input type="password" name="sifre" id="sifreid" size="10" maxlength="10" required><br>
+            <input type="submit" value="Gönder">
+            <input type="reset" value="Temizle">
+        </form>
+    </body>
+</html>

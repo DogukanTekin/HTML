@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <link rel="icon" href="Images/izmirfavicon.ico" type="image/x-icon">
+        <title>Form Uygulaması</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Üye Kayıt Formu</h1>
+        <form name="kayit" action="kayit.aspx" method="GET" autocomplete="on">
+            <table border="0">
+                <tr>
+                    <td>Ad</td>
+                    <td><input type="text" name="ad" id="adid" maxlength="30" size="20" required autofocus></td>
+                </tr>
+                <tr>
+                    <td>Soyad</td>
+                    <td><input type="text" name="soyad" id="soyadid" maxlength="30" size="20" required></td>
+                </tr>
+                <tr>
+                    <td>E Mail</td>
+                    <td><input type="email" name="email" id="mailid" maxlength="30" size="20" required placeholder="E-Mail Giriniz"></td>
+                </tr>
+                <tr>
+                    <td>Web Sitesi</td>
+                    <td><input type="url" name="website" id="webid" maxlength="30" size="20"></td>
+                </tr>
+                <tr>
+                    <td>Yaşınız</td>
+                    <td><input type="number" name="yas" id="yasid" maxlength="3" size="3" required></td>
+                </tr>
+                <tr>
+                    <td>Doğum Yeri</td>
+                    <td>
+                        <select name="iller">
+                            <option>Ordu</option>
+                            <option>İzmir</option>
+                            <option selected>Ünye</option>
+                            <option>Fatsa</option>
+                            <option>Samsun</option>
+                            <option>Giresun</option>
+                            <option>Atakum</option>
+                            <option>Konak</option>
+                            <option>Buca</option>
+                            <option>Bornova</option>
+                            <option>İstanbul</option>
+                            <option>Balıkesir</option>
+                            <option>Altıeylül</option>
+                            <option>Ayvalık</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Şifre</td>
+                    <td><input type="password" name="pw" id="pwid" maxlength="30" size="20" required></td>
+                </tr>
+                <tr>
+                    <td>Öneri</td>
+                    <td><textarea name="oneri" rows="3" cols="20" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>İletişim Yolu</td>
+                    <td>
+                        <input type="checkbox" name="sms">SMS 
+                        <input type="checkbox" name="mail">Mail
+                        <input type="checkbox" name="duman">Duman
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sevdiğiniz Spor</td>
+                    <td>
+                        <input type="radio" name="spor" value="futbol">Futbol
+                        <input type="radio" name="spor" value="yüzme" checked>Yüzme
+                        <input type="radio" name="spor" value="satranc">Satranç
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="GÖNDER"><input type="reset" value="TEMİZLE"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
